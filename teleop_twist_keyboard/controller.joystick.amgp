@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joystick configversion="19" appversion="2.23">
+    <!--The SDL name for a joystick is included for informational purposes only.-->
+    <sdlname>TGZ Controller</sdlname>
+    <!--The GUID for a joystick is included for informational purposes only.-->
+    <guid>03000000790000001c18000011010000</guid>
+    <names>
+        <buttonname index="8">o</buttonname>
+    </names>
+    <sets>
+        <set index="1">
+            <axis index="1">
+                <throttle>normal</throttle>
+            </axis>
+            <axis index="2">
+                <throttle>normal</throttle>
+            </axis>
+            <axis index="3">
+                <throttle>normal</throttle>
+            </axis>
+            <axis index="4">
+                <throttle>normal</throttle>
+            </axis>
+            <axis index="5">
+                <throttle>positive</throttle>
+            </axis>
+            <axis index="6">
+                <throttle>positive</throttle>
+            </axis>
+            <dpad index="1">
+                <dpadbutton index="1">
+                    <slots>
+                        <slot>
+                            <code>0x49</code>
+                            <mode>keyboard</mode>
+                        </slot>
+                    </slots>
+                </dpadbutton>
+                <dpadbutton index="2">
+                    <slots>
+                        <slot>
+                            <code>0x4c</code>
+                            <mode>keyboard</mode>
+                        </slot>
+                    </slots>
+                </dpadbutton>
+                <dpadbutton index="8">
+                    <slots>
+                        <slot>
+                            <code>0x4a</code>
+                            <mode>keyboard</mode>
+                        </slot>
+                    </slots>
+                </dpadbutton>
+                <dpadbutton index="4">
+                    <slots>
+                        <slot>
+                            <code>0x2c</code>
+                            <mode>keyboard</mode>
+                        </slot>
+                    </slots>
+                </dpadbutton>
+            </dpad>
+            <button index="1">
+                <slots>
+                    <slot>
+                        <code>0x5a</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="2">
+                <slots>
+                    <slot>
+                        <code>0x57</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="4">
+                <slots>
+                    <slot>
+                        <code>0x58</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="5">
+                <slots>
+                    <slot>
+                        <code>0x51</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="7">
+                <slots>
+                    <slot>
+                        <code>0x55</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="8">
+                <slots>
+                    <slot>
+                        <code>0x4f</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="9">
+                <slots>
+                    <slot>
+                        <code>0x2e</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="10">
+                <slots>
+                    <slot>
+                        <code>0x4d</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="14">
+                <slots>
+                    <slot>
+                        <code>0x45</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+            <button index="15">
+                <slots>
+                    <slot>
+                        <code>0x43</code>
+                        <mode>keyboard</mode>
+                    </slot>
+                </slots>
+            </button>
+        </set>
+    </sets>
+</joystick>

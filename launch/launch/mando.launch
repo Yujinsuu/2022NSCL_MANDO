@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+	<!--lidar-->
+	<include file="$(find rplidar_ros)/launch/rplidar.launch"/>
+
+	<!--odom-->
+	<node name="handsfree" pkg="handsfree_ros_imu" type="hfi_a9_ros.py">
+		<param name="_port" value="/dev/ttyUSB1"/>
+	</node>
+	
+	<include file="$(find ntrip_ros)/launch/ntrip_ros_vrs.launch"/>
+
+	<node name="gps_to_xy" pkg="ntrip_ros" type="driver.py"/>
+
+	<node name="odom" pkg="odometry" type="odometry.py"/>
+
+	<!--frenet-->
+	<include file="$(find cv_agents)/launch/launch_all.launch"/>
+
+	<!--control-->
+	<node name="Car_Control" pkg="henes_car_control" type="henes_car_control_node"/>
+
+	<node name="serial_node" pkg="rosserial_python" type="serial_node.py">
+		<param name="_baud" value="57600"/>
+		<param name="_port" value="/dev/ttyACM1"/>
+	</node>
+
+	<node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py"/>
+	
+</launch>

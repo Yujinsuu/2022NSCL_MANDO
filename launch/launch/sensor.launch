@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+	<!--lidar-->
+	<include file="$(find rplidar_ros)/launch/rplidar.launch"/>
+
+	<!--odom-->
+	<node name="handsfree" pkg="handsfree_ros_imu" type="imu1.py"/>
+	
+	<include file="$(find ublox_gps)/launch/ublox_device.launch" />
+	<include file="$(find ntrip_ros)/launch/ntrip_ros_vrs.launch"/>
+
+	<node name="odom" pkg="odometry" type="odometry.py"/>
+
+
+
+</launch>

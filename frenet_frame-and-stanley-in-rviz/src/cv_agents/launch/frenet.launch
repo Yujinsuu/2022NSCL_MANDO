@@ -1,0 +1,12 @@
+<launch>
+	<node name="map_visualizer" pkg="map_server" type="map_visualizer.py" />
+	
+	<node name="path" pkg="cv_agents" type="path_global.py"/>
+
+	<node name="control" pkg="cv_agents" type="control.py"/>
+
+	<node name="state" pkg="update" type="state.py"/>
+
+	<node name="rviz" pkg="rviz" type="rviz" required="True" args="-d $(find cv_agents)/rviz/htech.rviz" />
+	
+</launch>

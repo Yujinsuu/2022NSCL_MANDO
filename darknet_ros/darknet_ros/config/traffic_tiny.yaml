@@ -1,0 +1,15 @@
+yolo_model:
+
+  config_file:
+    name: traffic_light_tiny.cfg
+  weight_file:
+    name: traffic_light_tiny.weights
+  threshold:
+    value: 0.6
+  detection_classes:
+    names:
+      - green
+      - left
+      - red
+      - straightleft
+      - yellow

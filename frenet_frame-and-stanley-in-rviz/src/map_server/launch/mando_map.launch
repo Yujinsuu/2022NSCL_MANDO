@@ -1,0 +1,7 @@
+<launch>
+
+	<node name="map_visualizer" pkg="map_server" type="map_visualizer.py" />
+
+	<node name="rviz" pkg="rviz" type="rviz" required="True" args="-d $(find cv_agents)/rviz/mando_final.rviz" />
+	
+</launch>

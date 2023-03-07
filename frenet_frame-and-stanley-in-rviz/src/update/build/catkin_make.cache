@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/hojun/catkin_ws/src/mando/frenet/src/update/devel -DCMAKE_INSTALL_PREFIX=/home/hojun/catkin_ws/src/mando/frenet/src/update/install -G Unix Makefiles

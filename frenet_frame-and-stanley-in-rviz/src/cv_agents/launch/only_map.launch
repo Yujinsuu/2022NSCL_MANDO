@@ -1,0 +1,4 @@
+<launch>
+	<node name="rviz" pkg="rviz" type="rviz" required="True" args="-d $(find cv_agents)/rviz/htech.rviz" />
+	
+</launch>

@@ -1,0 +1,12 @@
+yolo_model:
+
+  config_file:
+    name: mando_v4_ver3.cfg
+  weight_file:
+    name: mando_v4_ver3.weights
+  threshold:
+    value: 0.6
+  detection_classes:
+    names:
+      - green
+      - red

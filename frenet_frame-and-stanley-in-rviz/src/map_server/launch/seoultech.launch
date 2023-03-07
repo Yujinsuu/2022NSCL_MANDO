@@ -1,0 +1,9 @@
+<launch>
+
+	<node name="map_visualizer" pkg="map_server" type="map_visualizer.py" />
+
+	<!--<node name="state" pkg="update" type="state.py"/>-->
+
+	<node name="rviz" pkg="rviz" type="rviz" required="True" args="-d $(find cv_agents)/rviz/seoultech.rviz" />
+	
+</launch>

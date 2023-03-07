@@ -1,0 +1,10 @@
+<launch>
+	<node name="map_visualizer" pkg="map_server" type="htech_map.py" />
+	
+	<node name="spawn_agents" pkg="cv_agents" type="simulation.py" output="screen"/>
+
+	<node name="collision_check" pkg="obstacles" type="collision_check_with_visualizing_car.py" />
+
+	<node name="rviz" pkg="rviz" type="rviz" required="True" args="-d $(find cv_agents)/rviz/htech.rviz" />
+	
+</launch>

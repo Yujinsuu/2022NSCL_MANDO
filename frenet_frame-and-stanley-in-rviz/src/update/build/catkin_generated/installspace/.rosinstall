@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/hojun/catkin_ws/src/mando/frenet/src/update/install/setup.sh
